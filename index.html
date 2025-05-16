@@ -1,40 +1,122 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Сложно сосредоточиться</title>
-    <script src="./scripts/script.js"></script>
-  </head>
-  <body class="page">
-    <header class="header decorated-zone">
-      <nav class="header__theme-menu">
-        <ul class="header__theme-menu-list">
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_light"
-            >
-              День
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto"
-              disabled
-            >
-              Авто
-            </button>
-          </li>
-          <li class="header__theme-menu-item">
-            <button
-              class="header__theme-menu-button header__theme-menu-button_type_dark"
-            >
-              Неон
-            </button>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </body>
+<html lang="ru" class="page theme-dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сложно сосредоточиться</title>
+  <link rel="stylesheet" href="./styles/variables.css">
+  <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="./styles/dark.css">
+  <link rel="stylesheet" href="./styles/light.css">
+  <meta name="color-scheme" content="dark light">
+</head>
+<body class="page">
+  <header class="header decorated-zone">
+    <div class="header__decoration" aria-hidden="true">REC</div>
+    <nav class="header__theme-menu">
+      <ul class="header__theme-menu-list">
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_type_light">
+            День
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_active header__theme-menu-button_type_auto" disabled>
+            Авто
+          </button>
+        </li>
+        <li class="header__theme-menu-item">
+          <button class="header__theme-menu-button header__theme-menu-button_type_dark">
+            Неон
+          </button>
+        </li>
+      </ul>
+    </nav>
+    <h1 class="header__title">no focus</h1>
+    <p class="header__text title-decor">
+      Сложно сосредоточиться на чём-то одном. Но если не сосредоточиться, 
+      сложно добиться чего-то значительного.
+    </p>
+  </header>
+  
+  <main class="content">
+    <section class="section">
+      <h2 class="section__title">Почему так происходит?</h2>
+      <div class="section__content">
+        <div class="article">
+          <h3 class="article__title title-decor">Многозадачность</h3>
+          <p class="article__text">
+            Особенно сложно сосредоточиться, когда задач много и все они — важные. 
+            Где же легендарная многозадачность, о которой все твердят? 
+            Она как бы есть, но не работает.
+          </p>
+        </div>
+        <div class="article">
+          <h3 class="article__title title-decor">Дофамин</h3>
+          <p class="article__text">
+            С гормонами активности всё понятно. Дофамин отвечает за целеустремлённость 
+            и мотивацию — то, что нужно для сосредоточенности. Но как быть, когда 
+            дофамин иссяк?
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section">
+      <h2 class="section__title">Что делать?</h2>
+      <div class="section__content">
+        <div class="article">
+          <h3 class="article__title title-decor">Разобраться в причинах</h3>
+          <p class="article__text">
+            Первое, что нужно сделать, — это понять, что именно мешает вам сосредоточиться. 
+            Это могут быть как внешние факторы, так и внутренние.
+          </p>
+        </div>
+        <div class="article">
+          <h3 class="article__title title-decor">Устранить отвлекающие факторы</h3>
+          <p class="article__text">
+            Закройте все лишние вкладки в браузере, выключите уведомления на телефоне, 
+            найдите тихое место для работы или используйте беруши.
+          </p>
+        </div>
+        <div class="article">
+          <h3 class="article__title title-decor">Метод помидора</h3>
+          <p class="article__text">
+            Работайте 25 минут, затем делайте перерыв на 5 минут. После четырёх таких 
+            циклов сделайте более длительный перерыв.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <section class="section section-wide">
+      <h2 class="section__title">Галерея фокуса</h2>
+      <div class="section__content">
+        <div class="gallery">
+          <div class="gallery__item gallery__item-wide">
+            <img src="./images/sunset.png" alt="Закат" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item-tall">
+            <img src="./images/ice-cream.png" alt="Мороженое" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item-tall">
+            <img src="./images/tape.png" alt="Кассета" loading="lazy">
+          </div>
+          <div class="gallery__item gallery__item-wide">
+            <img src="./images/books.png" alt="Книги" loading="lazy">
+          </div>
+          <div class="gallery__item">
+            <img src="./images/street.png" alt="Улица" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer class="footer decorated-zone">
+    <h2 class="footer__title">focus</h2>
+  </footer>
+  
+  <script src="./scripts/script.js"></script>
+</body>
 </html>
