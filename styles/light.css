@@ -15,5 +15,31 @@
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  background-image: var(--bg-image);
+}
+
+.theme-light .header__decoration {
+  display: none;
+}
+
+.theme-light .header__theme-menu-button {
+  border-color: var(--hover-border-color);
+  color: var(--text-color);
+}
+
+.theme-light .header__theme-menu-button_active,
+.theme-light .header__theme-menu-button:disabled {
+  background-color: var(--accent-color);
+  color: var(--bg-color);
+}
+
+.theme-light .title-decor::after {
+  background-color: var(--decor-color);
+}
+
+.theme-light .footer {
+  background-color: var(--bg-color);
+  color: var(--text-color);
 }
