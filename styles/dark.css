@@ -1,9 +1,10 @@
 :root.theme-dark {
   --bg-color: #000028;
-  --text-color: #F1B2CE;
+  --text-color: #f1b2ce;
   --h-text-color: #000028;
-  --accent-color: #FF0070;
-  --title-shadow: #FF0070;
+  --accent-color: #ff0070;
+  --title-shadow: #ff0070;
+  --menu-text-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
 }
@@ -11,7 +12,6 @@
 .theme-dark .page {
   background-color: var(--bg-color);
   color: var(--text-color);
-  background-image: var(--bg-image);
 }
 
 .theme-dark .title-decor::after {
