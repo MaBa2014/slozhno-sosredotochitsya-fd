@@ -10,6 +10,7 @@
   min-height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr auto;
+  gap: 60px;
 }
 
 .header {
@@ -90,7 +91,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   line-height: 0.825;
   text-shadow: 4px 4px 0 var(--title-shadow);
-  margin-left: -10px;
+  margin-left: -20px;
   align-self: center;
 }
 
@@ -142,7 +143,7 @@
   color: var(--article-title-color);
   font-weight: 400;
 }
-
+/*
 .content {
   padding: 40px 10px;
 }
@@ -150,7 +151,7 @@
 .section {
   margin-bottom: 50px;
 }
-
+*/
 .section__title {
   color: var(--section-title-color);
   margin-bottom: 20px;
@@ -221,7 +222,6 @@
   line-height: 0.825;
 }
 
-/* ===== Tablet ===== */
 @media (min-width: 768px) {
   .header {
     padding: 10px;
@@ -229,7 +229,7 @@
 
   .header__decoration {
     top: 20px;
-    right: 29px;
+    right: 22px;
   }
 
   .decorated-zone::before {
@@ -247,12 +247,6 @@
     color: var(--menu-text-color);
   }
 
-  .header__title {
-    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-    margin-left: -10px;
-    margin-top: 65px;
-  }
-
   .header__text {
     max-width: 364px;
     margin-top: 55px;
@@ -261,28 +255,30 @@
   }
 
   .content {
-    padding: 60px 20px;
+    display: grid;
+    gap: 80px;
+    /*padding: 60px 20px;*/
   }
 
   .section:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    margin-bottom: 80px;
   }
 
   .section:nth-child(1) .section__title {
     grid-column: 1;
     margin-bottom: 0;
+    padding-left: 12px;
   }
 
   .section:nth-child(1) .section__content {
     grid-column: 2;
   }
 
-  .section:nth-child(2),
-  .section:nth-child(3) {
-    margin-bottom: 80px;
+  .section:nth-child(2) {
+    display: grid;
+    gap: 20px;
   }
 
   .section:nth-child(3) {
@@ -291,6 +287,7 @@
   }
 
   .gallery {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, auto);
     gap: 20px;
@@ -326,15 +323,15 @@
   }
 }
 
-/* ===== Desktop ===== */
 @media (min-width: 1024px) {
   .header {
     min-height: 768px;
+    gap: 60px;
   }
 
   .header__theme-menu {
     justify-self: center;
-    margin-top: 0;
+    margin-top: 5px;
   }
 
   .header__theme-menu-list {
@@ -343,12 +340,17 @@
 
   .header__text {
     max-width: 491px;
-    margin-bottom: 114px;
     max-height: fit-content;
   }
 
-  .content {
-    padding: 60px 40px;
+  .section:nth-child(2) .section__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .footer {
+    min-height: 768px;
   }
 }
 
