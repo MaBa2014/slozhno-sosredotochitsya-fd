@@ -1,12 +1,7 @@
-/*
-  Специально для тёмной темы при наличии класса,
-  здесь окажутся стили, которые нужно переопределить принудительно,
-  переключая тему
-*/
-
 :root.theme-dark {
   --bg-color: #000028;
   --text-color: #F1B2CE;
+  --h-text-color: #000028;
   --accent-color: #FF0070;
   --title-shadow: #FF0070;
   --bg-image: url(../images/cover-image-dark.png);
@@ -17,21 +12,6 @@
   background-color: var(--bg-color);
   color: var(--text-color);
   background-image: var(--bg-image);
-}
-
-.theme-dark .header__decoration {
-  color: var(--accent-color);
-}
-
-.theme-dark .header__theme-menu-button {
-  border-color: var(--hover-border-color);
-  color: var(--text-color);
-}
-
-.theme-dark .header__theme-menu-button_active,
-.theme-dark .header__theme-menu-button:disabled {
-  background-color: var(--accent-color);
-  color: var(--bg-color);
 }
 
 .theme-dark .title-decor::after {
