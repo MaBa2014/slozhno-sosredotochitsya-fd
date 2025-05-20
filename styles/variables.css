@@ -2,8 +2,8 @@
   --bg-color: #000028;
   --text-color: #f1b2ce;
   --h-text-color: #000028;
-  --accent-color: #ff0070;
-  --title-color: #db00ff;
+  --accent-color: #FF0070;
+  --title-color: #DB00FF;
   --title-shadow: var(--accent-color);
   --section-title-color: var(--accent-color);
   --article-title-color: var(--bg-color);
@@ -17,5 +17,5 @@
   --title-font-size-desktop: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
-  --menu-text-color: #ff0070;
+  --menu-text-color: var(--accent-color);
 }
