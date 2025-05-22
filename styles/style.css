@@ -27,8 +27,8 @@
 
 .header__decoration {
   position: absolute;
-  top: 10px;
-  right: 19px;
+  top: 20px;
+  right:30px;
   color: var(--accent-color);
   font-size: 18px;
   line-height: 1.39;
@@ -118,8 +118,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 20px;
   border: 1px solid var(--decor-color);
 }
 
@@ -355,6 +355,13 @@
     max-height: fit-content;
   }
 
+  .section:nth-child(2) .section__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding-left: 0;
+  }
+
   .footer {
     min-height: 768px;
   }
@@ -367,7 +374,6 @@
     display: block;
   }
 }
-
 @keyframes pulse {
   0%,
   100% {
