@@ -18,5 +18,5 @@
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
   --menu-text-color: var(--accent-color);
+  --border-color: var(--accent-color);
 }
-

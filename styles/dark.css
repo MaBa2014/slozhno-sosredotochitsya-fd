@@ -8,6 +8,7 @@
   --menu-text-color: #ff0070;
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
+  --border-color: #FF0070;
 }
 
 .theme-dark .page {
