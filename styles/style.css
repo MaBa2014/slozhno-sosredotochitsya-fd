@@ -439,8 +439,32 @@
   .footer__title {
     font-size: 116px;
   }
+
+  .content {
+    margin-bottom: 30px;
+  }
 }
 
+/*@media (width <= 580px) {
+  .header__text {
+    max-width: fit-content;
+  }
+
+  .section__title {
+    max-width: fit-content;
+  }
+
+  .section_default,
+  .section_different {
+    display: block;
+    margin: 0;
+  }
+
+  .article__text {
+    max-width: fit-content;
+  }
+}
+*/
 @keyframes pulse {
   0%,
   100% {
