@@ -9,6 +9,7 @@
   --bg-image: url(../images/cover-image-dark.png);
   --rec-visibility: visible;
   --border-color: #FF0070;
+  --hover-color: #FF007066;
 }
 
 .theme-dark .page {

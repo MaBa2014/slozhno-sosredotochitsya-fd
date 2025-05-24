@@ -73,6 +73,7 @@ body {
   background: transparent;
   cursor: pointer;
   text-transform: lowercase;
+  transition: border-color 0.2s;
 }
 
 .header__theme-menu-button:hover {
@@ -87,8 +88,11 @@ body {
   border-bottom-color: var(--menu-text-color);
 }
 
-.header__theme-menu-button_active {
-  border-color: var(--border-color);
+.header__theme-menu-button_active,
+.header__theme-menu-button_active:hover,
+.header__theme-menu-button_active:focus,
+.header__theme-menu-button_active:focus-visible {
+  border-color: var(--border-color) !important;
   pointer-events: none;
 }
 
@@ -454,7 +458,6 @@ body {
     max-width: 355px;
   }
 }
-
 @keyframes pulse {
   0%,
   100% {
