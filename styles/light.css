@@ -11,6 +11,7 @@
   --border-color: #353430;
   --hover-color: #32312d66;
   --menu-text-color: #353430;
+  --decor-color: #353430;
 }
 
 .theme-light .page {
@@ -42,6 +43,7 @@
     --border-color: #353430;
     --hover-color: #32312d66;
     --menu-text-color: #353430;
+    --decor-color: #353430;
   }
 
   .theme-auto .header__decoration {
